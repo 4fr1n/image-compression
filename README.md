@@ -174,16 +174,16 @@ Each block in the stream is encoded as: `DC (i16)` followed by `(run: u8, value:
 
 ---
 
-## Quality vs. Size Examples
+## Quality vs. Size Examples & Samples
 
-Results will vary by image content. As a rough guide on a typical photograph:
+Here is a visual comparison using the included sample images (`abbey.jpg` and its reconstructions at different quality factors). 
 
-| Quality | Typical compression ratio | Visual quality |
-|---------|--------------------------|----------------|
-| 10 | ~25:1 | Heavy blocking artifacts |
-| 50 | ~10:1 | Visible but acceptable |
-| 75 | ~5:1 | Good — close to original |
-| 95 | ~2:1 | Near-lossless to the eye |
+| Compression Level | Image Preview | Typical Ratio | Visual Characteristics |
+| :--- | :--- | :--- | :--- |
+| **Original / Reference** | ![Original Abbey](./abbey.jpg) | 1:1 | Uncompressed baseline photograph. |
+| **Quality: 25** | ![Restored Q25](./restored25.png) | ~15:1 | Heavy blocking artifacts along high-frequency edges; noticeable color bleeding. |
+| **Quality: 50** | ![Restored Q50](./restored50.png) | ~10:1 | Slight artifacts visible upon close inspection, but acceptable for general viewing. |
+| **Quality: 75** (Default) | ![Restored Q75](./restored75.png) | ~5:1 | Excellent fidelity; visually near-identical to the original image. |
 
 ---
 
