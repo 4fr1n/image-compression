@@ -193,7 +193,6 @@ Here is a visual comparison using the included sample images (`abbey.jpg` and it
 
 | Compression Level | Image Preview | Typical Ratio | Visual Characteristics |
 | :--- | :--- | :--- | :--- |
-| **Original BMP (Uncompressed)** | ![Original BMP](./abbey.bmp) | 1:1 | Raw uncompressed baseline — 25.7 MB |
 | **Original JPEG Reference** | ![Original Abbey](./abbey.jpg) | — | Pre-compressed JPEG baseline — 2.88 MB |
 | **Quality: 25** | ![Restored Q25](./restored25.png) | ~15:1 | Heavy blocking artifacts along high-frequency edges; noticeable color bleeding |
 | **Quality: 50** | ![Restored Q50](./restored50.png) | ~10:1 | Slight artifacts visible upon close inspection, but acceptable for general viewing |
